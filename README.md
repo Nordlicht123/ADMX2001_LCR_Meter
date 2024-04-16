@@ -31,7 +31,8 @@ Check presence of ADMX2001:
     +-----------------------------------------------------------------------+
 3.  Speichern als »dfl«
 4.  Verlassen
-5.  Willkommen zu minicom 2.8
+5.  Press enter
+6.  Willkommen zu minicom 2.8
                                                                                 
     Optionen: I18n                                                                  
     Port /dev/ttyAMA0, 23:36:56                                                     
