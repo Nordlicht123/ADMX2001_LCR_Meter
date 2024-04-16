@@ -1,6 +1,12 @@
 # ADMX2001_LCR_Meter
 Qt6 Sources for controlling an Analog Devices ADM2001 LCR meter with a Raspberry Pi 5 (8 GB) OS Ubuntu 23.10.
 
+Install usefull tools:
+1.  sudo apt-get install mc
+2.  sudo apt-get install git
+3.  sudo apt-get install minicom
+4.  sudo apt-get install wget
+
 Setup UART:
 /boot/config.txt:
   //Config settings specific to arm64
@@ -43,12 +49,6 @@ Check presence of ADMX2001:
 
 Install latest Updates:
 1.  sudo apt-get update && sudo apt-get upgrade
-
-Usefull tools:
-1.  sudo apt-get install mc
-2.  sudo apt-get install git
-3.  sudo apt-get install minicom
-4.  sudo apt-get install wget
 
 Setup Qt6:
 1.  sudo apt install clang
