@@ -3,7 +3,7 @@ Qt6 Sources for controlling an Analog Devices ADM2001 LCR meter with a Raspberry
 
 Setup UART:
 /boot/config.txt:
-  # Config settings specific to arm64
+  //Config settings specific to arm64
   arm_64bit=1
   dtoverlay=uart0
   enable_uart=1
