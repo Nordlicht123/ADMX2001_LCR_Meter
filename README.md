@@ -1,8 +1,16 @@
 # ADMX2001_LCR_Meter
-Qt6 Sources for controlling an Analog Devices ADM2001 LCR meter with a Raspberry Pi 5 (8 GB) under Ubuntu 23.10.
+Qt6 Sources for controlling an Analog Devices ADM2001 LCR meter with a Raspberry Pi 5 (8 GB) OS Ubuntu 23.10.
+
+Setup UART:
+/boot/config.txt:
+  # Config settings specific to arm64
+  arm_64bit=1
+  dtoverlay=uart0
+  enable_uart=1
+  dtparam=uart0=on
 
 Latest Updates:
-sudo apt-get update && sudo apt-get upgrade
+1.  sudo apt-get update && sudo apt-get upgrade
 
 Usefull tools:
 1.  sudo apt-get install mc
