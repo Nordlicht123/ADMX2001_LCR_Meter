@@ -4,12 +4,43 @@ Qt6 Sources for controlling an Analog Devices ADM2001 LCR meter with a Raspberry
 Setup UART:
 /boot/config.txt:
   //Config settings specific to arm64
-  arm_64bit=1
-  dtoverlay=uart0
-  enable_uart=1
-  dtparam=uart0=on
+1.  arm_64bit=1
+2.  dtoverlay=uart0
+3.  enable_uart=1
+4.  dtparam=uart0=on
 
-Latest Updates:
+Check presence of ADMX2001:
+1. sudo minicom -s
+2.  +-----------------------------------------------------------------------+   
+    | A - Serieller Anschluss      : /dev/ttyAMA0                           |   
+    | B - Pfad zur Lockdatei       : /var/lock                              |   
+    | C - Programm zur Rufannahme  :                                        |   
+    | D - Programm zum Wählen      :                                        |   
+    | E - Bps/Par/Bits             : 115200 8N1                             |   
+    | F - Hardware Flow Control    : Nein                                   |   
+    | G - Software Flow Control    : Nein                                   |   
+    | H -     RS485 Enable      : No                                        |   
+    | I -   RS485 Rts On Send   : No                                        |   
+    | J -  RS485 Rts After Send : No                                        |   
+    | K -  RS485 Rx During Tx   : No                                        |   
+    | L -  RS485 Terminate Bus  : No                                        |   
+    | M - RS485 Delay Rts Before: 0                                         |   
+    | N - RS485 Delay Rts After : 0                                         |   
+    |                                                                       |   
+    |    Welchen Parameter möchten Sie ändern?                              |   
+    +-----------------------------------------------------------------------+
+3.  Speichern als »dfl«
+4.  Verlassen
+5.  Willkommen zu minicom 2.8
+                                                                                
+    Optionen: I18n                                                                  
+    Port /dev/ttyAMA0, 23:36:56                                                     
+                                                                                
+    Drücken Sie CTRL-A  Z für Hilfe zu speziellen Tasten                            
+                                                                                
+    ADMX2001>   <=== successful ADMX2001 response
+
+Install latest Updates:
 1.  sudo apt-get update && sudo apt-get upgrade
 
 Usefull tools:
