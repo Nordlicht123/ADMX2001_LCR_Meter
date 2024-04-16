@@ -1,6 +1,8 @@
 # ADMX2001_LCR_Meter
 Qt6 Sources for controlling an Analog Devices ADM2001 LCR meter with a Raspberry Pi 5 (8 GB) OS Ubuntu 23.10.
 
+See also https://wiki.analog.com/resources/eval/user-guides/admx/eval-admx2001ebz
+
 Install usefull tools:
 1.  sudo apt-get install mc
 2.  sudo apt-get install git
