@@ -10,7 +10,9 @@ Install usefull tools:
 4.  sudo apt-get install wget
 
 Setup UART:
-/boot/config.txt:
+Set uart access rights: sudo gpasswd -a ${USER} dialout
+
+/boot/firmware/config.txt:
   //Config settings specific to arm64
 1.  arm_64bit=1
 2.  dtoverlay=uart0
@@ -65,3 +67,5 @@ Setup Qt6:
 9.  sudo cmake --install .
 
 10.  sudo apt-get install qtcreator
+
+Remark Step 6: With the option parallel the build process hang up the system. Better use "cmake --build ."
